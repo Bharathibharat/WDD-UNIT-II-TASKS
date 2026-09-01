@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3e5f5;
+    color: #333;
+}
+
+.header {
+    background-color: #7b1fa2;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.summary-cards {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.summary-card {
+    flex: 1;
+    text-align: center;
+}
+
+.summary-card h3 {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.summary-card p {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #7b1fa2;
+}
+
+.controls {
+    margin-bottom: 2rem;
+}
+
+.control-form {
+    display: flex;
+    gap: 2rem;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-group select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.course-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.course-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.course-header h2 {
+    font-size: 1.2rem;
+    color: #4a148c;
+}
+
+.course-meta {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.status-full { background: #ffebee; color: #c62828; }
+.status-limited { background: #fff8e1; color: #f57f17; }
+.status-open { background: #e8f5e9; color: #2e7d32; }
+
+.capacity-section {
+    margin: 1rem 0;
+}
+
+.capacity-stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.capacity-bar-bg {
+    width: 100%;
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.capacity-bar {
+    height: 100%;
+    transition: width 0.3s;
+}
+
+.bg-green { background-color: #4caf50; }
+.bg-yellow { background-color: #ffc107; }
+.bg-red { background-color: #f44336; }
+
+.available-seats {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.course-footer {
+    margin-top: auto;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .summary-cards, .control-form {
+        flex-direction: column;
+    }
+}

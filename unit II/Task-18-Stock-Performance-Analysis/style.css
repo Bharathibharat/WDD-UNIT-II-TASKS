@@ -1,0 +1,33 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Space Grotesk', sans-serif; background: #0a0a0a; color: #ededed; padding: 2rem; }
+.container { max-width: 1200px; margin: 0 auto; }
+header { margin-bottom: 2rem; }
+h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.5px; }
+.dashboard-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 2rem; }
+.card { background: #141414; border: 1px solid #222; border-radius: 12px; padding: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+.card h3 { color: #888; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+.card .value { font-size: 1.8rem; font-weight: 700; margin-bottom: 5px; }
+.card .subtext { font-size: 0.9rem; color: #888; }
+.text-green { color: #00c853; }
+.text-red { color: #ff1744; }
+.badge { display: inline-block; padding: 4px 8px; border-radius: 4px; font-size: 0.85rem; font-weight: 600; }
+.badge-green { background: rgba(0,200,83,0.1); color: #00c853; }
+.badge-red { background: rgba(255,23,68,0.1); color: #ff1744; }
+.main-content { display: flex; gap: 20px; align-items: flex-start; }
+.portfolio-section { flex: 3; background: #141414; border: 1px solid #222; border-radius: 12px; padding: 20px; overflow-x: auto; }
+.sidebar { flex: 1; min-width: 300px; }
+.controls { margin-bottom: 20px; display: flex; gap: 10px; }
+.btn { text-decoration: none; padding: 8px 16px; background: #222; color: #aaa; border-radius: 20px; font-size: 0.9rem; transition: 0.3s; }
+.btn:hover, .btn.active { background: #ededed; color: #0a0a0a; }
+.portfolio-table { width: 100%; border-collapse: collapse; }
+.portfolio-table th, .portfolio-table td { padding: 15px 10px; text-align: right; border-bottom: 1px solid #222; }
+.portfolio-table th { color: #888; font-weight: 500; font-size: 0.85rem; text-transform: uppercase; }
+.portfolio-table th:first-child, .portfolio-table td:first-child { text-align: left; }
+.portfolio-table tr:hover { background: #1a1a1a; }
+.sector-label { font-size: 0.75rem; color: #666; margin-top: 4px; }
+.allocation-list { display: flex; flex-direction: column; gap: 15px; margin-top: 15px; }
+.allocation-item { display: flex; flex-direction: column; gap: 8px; }
+.alloc-header { display: flex; justify-content: space-between; font-size: 0.9rem; }
+.progress-bar { width: 100%; height: 6px; background: #222; border-radius: 3px; overflow: hidden; }
+.progress { height: 100%; background: #4a90e2; border-radius: 3px; }
+@media (max-width: 900px) { .main-content { flex-direction: column; } .sidebar { width: 100%; } }

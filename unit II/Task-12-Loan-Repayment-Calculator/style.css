@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Poppins', sans-serif; background-color: #f1f8e9; color: #333; }
+
+header { background-color: #1b5e20; color: white; padding: 2rem; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+.container { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+
+.card { background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 2rem; }
+.card h2 { color: #1b5e20; border-bottom: 2px solid #c8e6c9; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+
+.form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
+.form-group { display: flex; flex-direction: column; }
+label { font-weight: 600; margin-bottom: 0.5rem; color: #555; }
+input, select { padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-family: inherit; font-size: 1rem; }
+input:focus, select:focus { border-color: #1b5e20; outline: none; box-shadow: 0 0 0 2px rgba(27, 94, 32, 0.2); }
+
+.btn { background: #1b5e20; color: white; border: none; padding: 12px 24px; border-radius: 6px; cursor: pointer; font-size: 1.1rem; font-weight: 600; width: 100%; margin-top: 1rem; transition: 0.3s; }
+.btn:hover { background: #003300; }
+
+.summary-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2rem; }
+.summary-card { background: #e8f5e9; padding: 1.5rem; border-radius: 8px; text-align: center; border: 1px solid #c8e6c9; }
+.summary-card h3 { color: #1b5e20; font-size: 1.5rem; margin-bottom: 0.5rem; }
+.summary-card p { font-weight: 600; color: #555; }
+
+@media (max-width: 768px) { .summary-cards { grid-template-columns: 1fr; } }
+
+.amortization-table { width: 100%; border-collapse: collapse; }
+.amortization-table th, .amortization-table td { padding: 12px; text-align: right; border-bottom: 1px solid #eee; }
+.amortization-table th { background: #f1f8e9; color: #1b5e20; font-weight: 600; }
+.amortization-table td:first-child, .amortization-table th:first-child { text-align: center; }
+
+.visual-bar { height: 20px; border-radius: 10px; display: flex; overflow: hidden; margin-top: 1rem; }
+.bar-principal { background: #4caf50; }
+.bar-interest { background: #ff9800; }
+.legend { display: flex; gap: 1rem; justify-content: center; margin-top: 0.5rem; font-size: 0.9rem; }
+.legend-item { display: flex; align-items: center; gap: 5px; }
+.dot { width: 12px; height: 12px; border-radius: 50%; }

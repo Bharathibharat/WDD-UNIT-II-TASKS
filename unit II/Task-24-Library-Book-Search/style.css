@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fff8e1; /* Cream */
+    color: #3e2723;
+}
+
+header {
+    background-color: #5d4037; /* Library Brown */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.search-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #5d4037;
+}
+
+.flex-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-item {
+    flex: 1;
+    min-width: 200px;
+}
+
+.btn {
+    background-color: #5d4037;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #3e2723;
+}
+
+.stats-panel {
+    display: flex;
+    justify-content: space-between;
+    background: #efebe9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.book-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-top: 4px solid #8d6e63;
+    transition: transform 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+}
+
+.book-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #4e342e;
+    margin-bottom: 10px;
+}
+
+.book-author {
+    color: #6d4c41;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.book-meta {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.badge-available {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.badge-issued {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.badge-category {
+    background-color: #e3f2fd;
+    color: #1565c0;
+    margin-right: 5px;
+}

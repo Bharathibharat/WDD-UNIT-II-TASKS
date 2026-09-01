@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', sans-serif; background-color: #f0f4f8; color: #333; }
+
+header { background-color: #1565c0; color: white; padding: 1.5rem; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+.container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; }
+
+@media (max-width: 768px) {
+    .container { grid-template-columns: 1fr; }
+}
+
+.card { background: white; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 1.5rem; }
+.card h2 { margin-bottom: 1rem; color: #1565c0; border-bottom: 2px solid #bbdefb; padding-bottom: 0.5rem; }
+
+.form-group { margin-bottom: 1rem; }
+label { display: block; font-weight: 600; margin-bottom: 0.3rem; }
+input, select, textarea { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; }
+.btn { background: #1565c0; color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer; font-weight: bold; width: 100%; transition: 0.2s; }
+.btn:hover { background: #0d47a1; }
+.btn-danger { background: #d32f2f; margin-top: 10px; }
+.btn-danger:hover { background: #b71c1c; }
+.btn-success { background: #2e7d32; margin-top: 10px; }
+
+.queue-stats { display: flex; gap: 1rem; margin-bottom: 1rem; }
+.stat { background: #e3f2fd; padding: 10px; border-radius: 6px; flex: 1; text-align: center; font-weight: bold; color: #1565c0; }
+
+.queue-visualization { display: flex; flex-direction: column; gap: 10px; }
+.ticket-card { background: #fff; border: 1px solid #e0e0e0; border-left: 5px solid #ccc; padding: 10px 15px; border-radius: 4px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+.ticket-card.priority-High { border-left-color: #d32f2f; }
+.ticket-card.priority-Medium { border-left-color: #f57c00; }
+.ticket-card.priority-Low { border-left-color: #1976d2; }
+
+.ticket-info h4 { margin-bottom: 5px; }
+.ticket-info p { font-size: 0.85rem; color: #666; }
+.ticket-pos { font-size: 1.5rem; font-weight: bold; color: #ccc; }
+
+.badge { padding: 3px 8px; border-radius: 12px; font-size: 0.8rem; color: white; }
+.badge.High { background: #d32f2f; }
+.badge.Medium { background: #f57c00; }
+.badge.Low { background: #1976d2; }
+
+.served-card { background: #e8f5e9; border: 1px solid #a5d6a7; padding: 15px; border-radius: 6px; text-align: center; margin-bottom: 1rem; }
